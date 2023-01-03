@@ -48,5 +48,5 @@ console.log(countries);
 
 //pop element from begenning
 
-var removeCountry = countries.slice(1, 6);
+var removeCountry = countries.slice(1, 5); //here 1,5 is the index numder
 console.log(removeCountry);
