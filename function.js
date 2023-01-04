@@ -33,7 +33,7 @@ var food = juice3();
 
 //has return & has parameter
 function juice4(_frutes1, _frutes2) {
-    console.log('give me some juice in a glass');
+    console.log('give me juice in a glass');
     return 'glass';
 }
 juice4('apple', 'orrange');
