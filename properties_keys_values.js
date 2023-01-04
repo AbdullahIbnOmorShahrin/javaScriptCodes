@@ -33,3 +33,6 @@ console.log(properties);
 
 var property_values = Object.values(shoppingcart);
 console.log(property_values);
+
+var smartphone = { brand: "iPhone", model: "13" };
+console.log(smartphone["brand"]);
