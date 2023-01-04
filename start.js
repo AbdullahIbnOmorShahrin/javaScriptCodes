@@ -39,6 +39,9 @@ console.log(typeof myname);
 var gpa = 3.22;
 console.log(typeof gpa);
 
+var num = 3;
+console.log(typeof num);
+
 var areyouhappy = true;
 console.log(typeof areyouhappy);
 
