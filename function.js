@@ -131,25 +131,47 @@ function traffic_activity(signal) {
 }
 traffic_activity(signal);
 
+
+
 /* find the odd number and add all of them */
 
 
-function findOddSum(array2) {
-    var addAlleven = 0;
-    var addAllOdd = 0;
+function findOddNum(array2) {
+    const allOddNumList = [];
     for (var i = 0; i < array2.length; i++) {
-        var num = array[i];
-        var remainder = num % 2;
-        if (remainder != 0) {
-            var addAllOdd = num + addAllOdd;
-            console.log('addAllOdd');
-        }
-        else {
-            var addAllOdd = num + addAllOdd;
-            console.log('addAllOdd');
+        var num = array2[i];
+        var remainder2 = num % 2;
+        if (remainder2 !== 0) {
+            allOddNumList.push(num);
         }
     }
+    //console.log('all Odd Numbers', allOddNumList);
+    return allOddNumList;
+
 }
 
-var array2 = [2, 4, 3, 9, 10];
-findOddSum(array2);
+var array2 = [2, 4, 3, 9, 10, 11, 15];
+console.log('the main array is', array2);
+findOddNum(array2);
+var allOddNumList = findOddNum(array2);
+console.log('all Odd Numbers are', allOddNumList);
+
+
+function findTotalOfArray(arr) {
+    var sum = 0;
+    for (var i = 0; i < arr.length; i++) {
+        var element = arr[i];
+        sum = sum + element;
+        //console.log('hi', sum);
+    }
+    return sum;
+}
+
+
+var arr = allOddNumList;
+findTotalOfArray(arr);
+
+var AllOddSum = findTotalOfArray(arr);
+console.log('All Odd Sum', AllOddSum);
+
+
