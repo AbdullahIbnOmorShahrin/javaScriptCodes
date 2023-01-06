@@ -130,3 +130,26 @@ function traffic_activity(signal) {
         console.log('cross the road')
 }
 traffic_activity(signal);
+
+/* find the odd number and add all of them */
+
+
+function findOddSum(array2) {
+    var addAlleven = 0;
+    var addAllOdd = 0;
+    for (var i = 0; i < array2.length; i++) {
+        var num = array[i];
+        var remainder = num % 2;
+        if (remainder != 0) {
+            var addAllOdd = num + addAllOdd;
+            console.log('addAllOdd');
+        }
+        else {
+            var addAllOdd = num + addAllOdd;
+            console.log('addAllOdd');
+        }
+    }
+}
+
+var array2 = [2, 4, 3, 9, 10];
+findOddSum(array2);
