@@ -25,10 +25,10 @@ var gpa = '3.22';
 console.log(gpa);
 
 var showgpa = parseInt(gpa);  //its show only the integer number and convert string to integer number. 
-console.log(showgpa);
+console.log('parseInt', showgpa);
 
-var showgpa = parseFloat(gpa);  //its show only the float number and convert string to float number. 
-console.log(showgpa);
+var showgpa = parseFloat(gpa);  //its show  float & integer number and convert string to float number. 
+console.log('parseFloat', showgpa);
 
 
 
