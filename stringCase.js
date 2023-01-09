@@ -32,6 +32,9 @@ else console.log("does NOT exist as the index number is -1")
 
 console.log("line start with 'how' " + line.startsWith('how'));
 
+const splitLine = line.split(' ');
+console.log('split', splitLine);
+
 
 const fileName = "image.pdf";
 console.log("line ends with '.pdf'" + fileName.endsWith(".pdf"));
