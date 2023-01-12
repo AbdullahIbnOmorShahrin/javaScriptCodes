@@ -54,7 +54,7 @@ totalnum = num1 + num2;
 console.log(totalnum);
 
 totalnum = totalnum.toFixed(3);
-console.log(totalnum);
+console.log('uses of toFixed', totalnum);
 
 
 //caculating the reminder
@@ -62,3 +62,17 @@ var num3 = 18;
 var num4 = 7;
 totalnum2 = num3 % num4;
 console.log(totalnum2);
+
+
+function compare(a, b) {
+    if (a == b) {        // == operator convert the data type  when compare but
+        console.log(typeof a);  // === operator maintain the data type strictly when compare
+        console.log(typeof b);
+        return true;
+    } else {
+        console.log(typeof a);
+        return false;
+    }
+}
+const result = compare("15", 15);
+console.log('compare', result);
