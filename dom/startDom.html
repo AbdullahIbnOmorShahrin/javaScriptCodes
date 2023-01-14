@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+
+<body>
+    <section>
+        <h1>Welcome to DOM World</h1>
+        <ul>
+            <li>Document</li>
+            <li>Object</li>
+            <li>Model</li>
+        </ul>
+    </section>
+
+    <section>
+        <h1>Fruits List</h1>
+        <ul>
+            <li class="fvrt">Banana</li>
+            <li id="hate">Apple</li>
+            <li class="fvrt">Jackfruit</li>
+        </ul>
+    </section>
+
+    <script>
+        const student = {
+            names: 'shahrin',
+            age: 21
+        }
+        const callByTags = document.getElementsByTagName('h1');
+        for (tag of callByTags) {
+            console.log(tag);
+            console.log(tag.innerText);
+        }
+        const callByClass = document.getElementsByClassName('fvrt');
+        for (fvrtClass of callByClass) {
+            console.log(fvrtClass);
+            console.log(fvrtClass.innerText);
+        }
+        const callById = document.getElementById('hate');
+        console.log(callById);
+        console.log(callById.innerText);
+
+    </script>
+</body>
+
+
+</html>
