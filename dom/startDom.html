@@ -7,6 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM</title>
 </head>
+<style>
+    h1 {
+        color: mediumblue;
+    }
+
+    .fvrt {
+        color: red;
+    }
+
+    #hate {
+        color: yellow;
+    }
+</style>
 
 <body>
     <section>
@@ -46,6 +59,10 @@
         console.log(callById);
         console.log(callById.innerText);
 
+
+        // querySelectorAll
+        const someLi = document.querySelectorAll('.fvrt');
+        console.log(someLi);
     </script>
 </body>
 
