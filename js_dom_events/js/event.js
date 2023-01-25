@@ -12,7 +12,7 @@ function makePurple() {
 //option 3
 const makeBlueButton = document.getElementById('make-blue');
 makeBlueButton.onclick = function makeBlue() {
-    document.body.style.backgroundColor = "purple";
+    document.body.style.backgroundColor = "blue";
 };
 //option 4
 const makePinkButton = document.getElementById('make-pink');
