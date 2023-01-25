@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type Delete to Delete</title>
+</head>
+
+<body>
+    <p id="text-area">Delete me!</p>
+    <br><br>
+    <input id="input-area" type="text" placeholder="type 'delete' to delete">
+    <button id="btn-delete" disabled>Delete</button>
+
+    <script>
+        document.getElementById('input-area').addEventListener('keyup', function (event) {
+            const text = event.target.value;
+            const inputArea = document.getElementById('input-area');
+            const value = inputArea.value;
+            const textArea = document.getElementById('text-area');
+            const button = document.getElementById('btn-delete');
+            if (text === 'delete') {
+                button.removeAttribute('disabled');
+            }
+            else {
+                button.setAttribute('disabled', true);
+            }
+
+            button.addEventListener('click', function () {
+                textArea.style.display = 'none';
+            })
+
+            console.log(inputArea.value);
+        })
+    </script>
+
+
+
+</body>
+
+</html>
