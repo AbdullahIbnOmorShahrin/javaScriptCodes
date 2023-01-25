@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>click any child to remove</h1>
+    <section id="grand-parent">
+        <ul id="ulParent">
+            <li class="child"> eius reiciendis ullam animi rerum!</li>
+            <li class="child"> tempore ullam aut vel similique.</li>
+            <li class="child"> Iure inventore quisquam maiores cupiditate!</li>
+            <li class="child"> Sint, quo facere!</li>
+        </ul>
+        <button id="add-child">Add child</button>
+    </section>
+
+    <script>
+
+        // creating new child
+        document.getElementById('add-child').addEventListener('click', function () {
+            const CreateChild = document.createElement('li');
+            CreateChild.innerText = 'lorem';
+            const ulParent = document.getElementById('ulParent');
+            ulParent.appendChild(CreateChild);
+
+        })
+
+
+        // //As event set to the child its not deleting the new child becasue
+        // // the code run already amoung the existing childs.
+        // const childs = document.getElementsByClassName('child');
+        // for (child of childs) {
+        //     child.addEventListener('click', function (event) {
+        //         event.target.parentNode.removeChild(event.target);
+        //     })
+        // }
+
+        //const parent = document.getElementById('parent');
+        ulParent.addEventListener('click', function () {
+
+            event.target.parentNode.removeChild(event.target);
+        });
+
+
+
+    </script>
+
+</body>
+
+</html>
