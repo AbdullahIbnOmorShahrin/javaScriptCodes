@@ -10,7 +10,7 @@ function displayData(data) {
     for (const user of data) {
         console.log(user.name);
         const li = document.createElement('li');
-        li.innerText = `${user.name}'s zipcode is: ${user.address.zipcode}`;
+        li.innerText = `${user.name}'s zipcode is: ${user.address.zipcode} and lives in ${user.address.street} street`;
         ul.appendChild(li);
 
     }
